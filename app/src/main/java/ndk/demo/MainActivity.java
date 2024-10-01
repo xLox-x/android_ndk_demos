@@ -53,6 +53,21 @@ public class MainActivity extends AppCompatActivity {
         mJNICaseList.add(new JNIAction("stringFromJNI", this::stringFromJNI));
         mJNICaseList.add(new JNIAction("helloJNI", this::helloJNI));
         mJNICaseList.add(new JNIAction("helloCPP", this::helloCPP));
+        mJNICaseList.add(new JNIAction("helloMixture", this::helloMixture));
+        
+        mJNICaseList.add(new JNIAction("testJNIPrimitive", this::testJNIPrimitive));
+        mJNICaseList.add(new JNIAction("testJNIString", this::testJNIString));
+        mJNICaseList.add(new JNIAction("testJNIPrimitiveArray", this::testJNIPrimitiveArray));
+
+        mJNICaseList.add(new JNIAction("testJNIInstanceVariable", this::testJNIInstanceVariable));
+        mJNICaseList.add(new JNIAction("testJNIStaticVariable", this::testJNIStaticVariable));
+        mJNICaseList.add(new JNIAction("testJNICallback", this::testJNICallback));
+        mJNICaseList.add(new JNIAction("testSuperMethod", this::testSuperMethod));
+
+        mJNICaseList.add(new JNIAction("testConstructor", this::testConstructor));
+        mJNICaseList.add(new JNIAction("testJNIObjectArray", this::testJNIObjectArray));
+        mJNICaseList.add(new JNIAction("testJNIReference", this::testJNIReference));
+
     }
 
     class MyAdapter extends RecyclerView.Adapter<MyViewHoder> {
